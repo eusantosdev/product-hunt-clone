@@ -13,6 +13,16 @@ export default function Home() {
           <a href="#">Sing-Up</a>
         </div>
       </header>
+
+      <footer className="p-26 bg-[#3E3F3E] text-sm">
+        <h2>Principais categorias</h2>
+          <div className="grid grid-cols-4 gap-4">
+            <div className="">Card 1</div>
+            <div className="">Card 2</div>
+            <div className="">Card 3</div>
+            <div className="">Card 4</div>
+          </div>
+      </footer>
     </>
   );
 }
