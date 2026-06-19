@@ -1,26 +1,17 @@
 export default function Home() {
   return (
     <>
-      <header>
-
-        <div>
-          <h1>Logo</h1>
+      <header className="p-8 bg-[#FFFFFF] text-[#3E3F3E] rounded-md text-base flex justify-between">
+        <span>Logo</span>
+        <div className="flex gap-4">
+            <a className="hover:text-[#DA552F]" href="#">Produtos</a>
+            <a className="hover:text-[#DA552F]"href="#">Categorias</a>
+            <a className="hover:text-[#DA552F]"href="#">Sobre</a>
         </div>
-
-        <div>
-          <ul>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#"></a>Categorias</li>
-            <li><a href="#"></a>Sobre</li>
-          </ul>
+        <div className="flex gap-4">
+          <a href="#">Login</a>
+          <a href="#">Sing-Up</a>
         </div>
-
-        <div>
-          <button>Login</button>
-
-          <button>Sing Up</button>
-        </div>
-
       </header>
     </>
   );
