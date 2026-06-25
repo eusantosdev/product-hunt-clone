@@ -1,6 +1,6 @@
 export default function Header() {
     return(
-        <header className="p-4 rounded-md text-base flex justify-between">
+        <header className="container mx-auto p-4 rounded-md text-base flex justify-between">
             <span>Logo</span>
             <div className="flex gap-4">
                 <a className="hover:text-[#DA552F]" href="#">Produtos</a>
