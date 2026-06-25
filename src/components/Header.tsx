@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 export default function Header() {
     return(
         <header className="fixed w-full z-20 top-0 start-0 border-b border-default">
@@ -6,10 +9,10 @@ export default function Header() {
                     <span className="self-center text-xl text-heading font-semibold whitespace-nowrap">Product Hunt</span>
                 </a>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-4">
-                <button type="button" className="text-white bg-[#F4320B] hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Sing In</button>
-                <button type="button" className="text-white bg-[#F4320B] hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Sing Up</button>
+                <button type="button" className="text-white bg-[#F4320B] hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none">Sing In</button>
+                <button type="button" className="text-white bg-[#F4320B] hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none">Sing Up</button>
                     <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-sticky" aria-expanded="false">
-                        <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" d="M5 7h14M5 12h14M5 17h14"/></svg>
+                        <FontAwesomeIcon icon={faBars} className="text-2xl"/>
                     </button>
                 </div>
                 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
@@ -27,6 +30,5 @@ export default function Header() {
                 </div>
             </div>
         </header>
-
     )
 }
