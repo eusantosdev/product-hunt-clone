@@ -1,7 +1,12 @@
+"use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return(
         <header className="w-full top-0 start-0 border-b border-default">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
