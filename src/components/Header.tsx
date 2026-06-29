@@ -8,7 +8,7 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return(
-        <header className="absolute w-full top-0 start-0 border-b border-default">
+        <header className="absolute z-20 w-full top-0 start-0 border-b border-default">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-xl text-heading font-semibold whitespace-nowrap">Product Hunt</span>
@@ -24,8 +24,8 @@ export default function Header() {
                         )}
                     </button>
                 </div>
-                    <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-                        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+                    <div className={`items-center justify-between ${isOpen ? "block" : "hidden"} w-full md:flex md:w-auto md:order-1`}>
+                        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
                             <li>
                                 <a href="#" className="block py-2 px-3 text-heading rounded hover:text-[#F4320B] hover:underline">Produtos</a>
                             </li>
