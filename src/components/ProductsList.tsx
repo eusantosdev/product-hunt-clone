@@ -1,6 +1,6 @@
 export default function ProductsList() {
     return(
-        <nav className="container items-center mx-auto p-4 flex justify-between">
+        <section className="container items-center mx-auto p-4 flex justify-between">
             <h3>Tranding Topics</h3>
             <div className="flex gap-4">
                 <button className="p-2 rounded-md bg-[#F87C63] hover:bg-[#F4320B]">
@@ -19,6 +19,6 @@ export default function ProductsList() {
                     Tech
                 </button>
             </div>
-        </nav>
+        </section>
     )
 }
