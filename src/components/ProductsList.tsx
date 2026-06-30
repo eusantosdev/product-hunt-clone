@@ -1,4 +1,6 @@
 export default function ProductsList() {
+    const categories = ["IA", "Marketing", "Produtividade", "SaaS", "Tech"];
+
     return(
         <section className="container items-center mx-auto p-4 flex justify-between">
             <h3>Tranding Topics</h3>
