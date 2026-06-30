@@ -1,3 +1,5 @@
+"use client";
+
 export default function ProductsList() {
     const categories = ["IA", "Marketing", "Produtividade", "SaaS", "Tech"];
 
