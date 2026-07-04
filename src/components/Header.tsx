@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed z-20 w-full top-0 start-0 border-b border-default">
+    <header className="fixed z-20 w-full top-0 start-0 border-b border-default bg-white">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
