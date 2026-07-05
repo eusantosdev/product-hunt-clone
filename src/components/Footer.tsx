@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 const categories = [
     "Engenharia e Desenvolvimento", 
     "LLMs", 
@@ -48,6 +51,8 @@ export default function Footer() {
                                 </a>
                             </li>
                         ))}
+                        <FontAwesomeIcon icon={faXTwitter} className="text-xl"/>
+                        <FontAwesomeIcon icon={faLinkedin} className="text-xl"/>
                     </ul>
                 </div>
             </div>
