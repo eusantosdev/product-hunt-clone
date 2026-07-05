@@ -1,6 +1,16 @@
 export default function Footer() {
     const categories = ["Engenharia e Desenvolvimento", "LLMs", "Produtividade", "Marketing e vendas", "Design e Criatividade", "Social e Comunidade", "Finanças", "Agentes de IA"];
 
+    const links = [
+        { label: "Newsletter", href: "#"},
+        { label: "Apps", href: "#"},
+        { label: "Sobre", href: "#"},
+        { label: "FAQ", href: "#"},
+        { label: "Nossos termos", href: "#"},
+        { label: "Privacidade e Cookies", href: "#"},
+        { label: "Anucie aqui", href: "#"},
+    ]
+
     return(
         <footer className="w-full p-4 text-[#B4C3D2] bg-[#366899]">
             <div className="max-w-screen-xl mx-auto">
@@ -16,10 +26,11 @@ export default function Footer() {
                     ))}
                 </div>
 
-                <div className="pt-4">
-                    <p>© 2026 Product Hunt Clone</p>
-                    <ul className="flex flex-wrap gap-4">
-                        <li><a href="#">Newsletter</a></li>
+                <div className="pt-8">
+                    <p className="text-sm">
+                        © 2026 Product Hunt Clone
+                    </p>
+                    <ul className="flex flex-wrap gap-6">
                         <li><a href="#">Newsletter</a></li>
                         <li><a href="#">Apps</a></li>
                         <li><a href="#">Sobre</a></li>
