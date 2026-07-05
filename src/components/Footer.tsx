@@ -1,16 +1,25 @@
+const categories = [
+    "Engenharia e Desenvolvimento", 
+    "LLMs", 
+    "Produtividade", 
+    "Marketing e vendas", 
+    "Design e Criatividade",
+     "Social e Comunidade", 
+     "Finanças", 
+     "Agentes de IA"
+    ];
+
+const links = [
+    { label: "Newsletter", href: "#"},
+    { label: "Apps", href: "#"},
+    { label: "Sobre", href: "#"},
+    { label: "FAQ", href: "#"},
+    { label: "Nossos termos", href: "#"},
+    { label: "Privacidade e Cookies", href: "#"},
+    { label: "Anucie aqui", href: "#"},
+]
+
 export default function Footer() {
-    const categories = ["Engenharia e Desenvolvimento", "LLMs", "Produtividade", "Marketing e vendas", "Design e Criatividade", "Social e Comunidade", "Finanças", "Agentes de IA"];
-
-    const links = [
-        { label: "Newsletter", href: "#"},
-        { label: "Apps", href: "#"},
-        { label: "Sobre", href: "#"},
-        { label: "FAQ", href: "#"},
-        { label: "Nossos termos", href: "#"},
-        { label: "Privacidade e Cookies", href: "#"},
-        { label: "Anucie aqui", href: "#"},
-    ]
-
     return(
         <footer className="w-full p-4 text-[#B4C3D2] bg-[#366899]">
             <div className="max-w-screen-xl mx-auto">
