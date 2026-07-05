@@ -31,13 +31,13 @@ export default function Footer() {
                         © 2026 Product Hunt Clone
                     </p>
                     <ul className="flex flex-wrap gap-6">
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">Apps</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">termos</a></li>
-                        <li><a href="#">Privacidade e Cookies</a></li>
-                        <li><a href="#">Anucie</a></li>
+                        {links.map((link) => (
+                            <li key={link.href}>
+                                <a href={link.href}>
+                                    {link.label}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
