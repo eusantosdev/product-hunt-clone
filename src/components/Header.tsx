@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="fixed z-20 w-full top-0 start-0 border-b border-default border-gray-300 bg-white">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
 
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-xl text-heading font-semibold whitespace-nowrap">
