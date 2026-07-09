@@ -57,19 +57,19 @@ export default function ProductsList() {
                     O Próximo Grande App
                 </h1>
 
-                <ul>
+                <ul className="flex flex-col gap-4">
                     {apps.map((app) => (
-                        <li key={app.title} >
-                            <img src={app.cover} alt={app.title} />
+                        <li key={app.title} className="flex items-center gap-4 py-4 xl:hover:bg-[#eceff1] rounded-xl transition-all duration-200">
+                            <img src={app.cover} alt={app.title} className="rounded-xl"/>
                             
-                            <div>
-                                <h3>{app.title}</h3>
-                                <p>{app.description}</p>
+                            <div className="flex-1">
+                                <h3 className="font-semibold">{app.title}</h3>
+                                <p className="text-sm text-gray-600">{app.description}</p>
                             </div>
 
-                            <button>
-                                <span>▲</span>
-                                <span>{app.votes}</span>
+                            <button className="flex flex-col items-center px-3 py-1.5 border-2 border-[#cfd8dc] rounded-md hover:border-[#F4320B] hover:transition-colors duration-200 hover:text-[#F4320B]">
+                                <span className="text-xs">▲</span>
+                                <span className="text-sm font-semibold text-foreground">{app.votes}</span>
                             </button>
                         </li>
                     ))}
