@@ -56,6 +56,24 @@ export default function ProductsList() {
                 <h1 className="text-xl font-bold">
                     O Próximo Grande App
                 </h1>
+
+                <ul>
+                    {apps.map((app) => (
+                        <li key={app.title} >
+                            <img src={app.cover} alt={app.title} />
+                            
+                            <div>
+                                <h3>{app.title}</h3>
+                                <p>{app.description}</p>
+                            </div>
+
+                            <button>
+                                <span>▲</span>
+                                <span>{app.votes}</span>
+                            </button>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </main>
     )
