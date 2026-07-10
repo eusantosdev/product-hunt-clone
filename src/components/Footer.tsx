@@ -7,9 +7,9 @@ const categories = [
     "Produtividade", 
     "Marketing e vendas", 
     "Design e Criatividade",
-     "Social e Comunidade", 
-     "Finanças", 
-     "Agentes de IA"
+    "Social e Comunidade", 
+    "Finanças", 
+    "Agentes de IA"
 ];
 
 const links = [
@@ -25,8 +25,8 @@ const links = [
 
 export default function Footer() {
     return(
-        <footer className="w-full p-4 bg-footer text-footer-muted">
-            <div className="max-w-screen-xl mx-auto">
+        <footer className="w-full bg-footer text-footer-muted">
+            <div className="max-w-screen-xl mx-auto px-4 py-8">
                 <h2 className="font-semibold">
                     Principais categorias
                 </h2>
