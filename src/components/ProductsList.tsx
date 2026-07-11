@@ -3,7 +3,7 @@ import { products, type Product } from "@/data/products";
 export default function ProductsList() {
     return(
         <main className="w-full">
-            <div className="max-w-screen-xl mx-auto px-4 py-8">
+            <div className="max-w-screen-xl mx-auto">
                 <h1 className="text-xl font-bold">
                     O Próximo Grande App
                 </h1>
@@ -17,6 +17,11 @@ export default function ProductsList() {
                                 <h3 className="font-semibold">{product.rank}. {product.title}</h3>
                                 <p className="text-sm text-gray-600">{product.description}</p>
                             </div>
+
+                            <button className="flex flex-col items-center px-4 py-1.5 border-2 border-[#cfd8dc] rounded-md hover:border-[#F4320B] hover:transition-colors duration-200 hover:text-[#F4320B]">
+                                <span className="text-xs">▲</span>
+                                <span className="text-sm font-semibold text-foreground">{product.comments}</span>
+                            </button>
 
                             <button className="flex flex-col items-center px-3 py-1.5 border-2 border-[#cfd8dc] rounded-md hover:border-[#F4320B] hover:transition-colors duration-200 hover:text-[#F4320B]">
                                 <span className="text-xs">▲</span>
