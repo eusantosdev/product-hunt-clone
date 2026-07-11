@@ -1,5 +1,8 @@
 import { products, type Product } from "@/data/products";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
+
 export default function ProductsList() {
     return(
         <main className="w-full">
@@ -19,7 +22,7 @@ export default function ProductsList() {
                             </div>
 
                             <button className="flex flex-col items-center px-4 py-1.5 border-2 border-[#cfd8dc] rounded-md hover:border-[#F4320B] hover:transition-colors duration-200 hover:text-[#F4320B]">
-                                <span className="text-xs">▲</span>
+                                <FontAwesomeIcon icon={faComment} className="text-xs"/>
                                 <span className="text-sm font-semibold text-foreground">{product.comments}</span>
                             </button>
 
