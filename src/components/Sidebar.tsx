@@ -27,24 +27,24 @@ export default function Sidebar() {
             </ul>
 
             <h1>
-                    Em breve
-                </h1>
-                <ul>
-                    {upcomings.map((upcoming) => (
-                        <li key={upcoming.title}>
-                            <div>
-                                <h3>{upcoming.title}</h3>
-                            </div>
-                                <img src={upcoming.cover} alt={upcoming.title} />
-                            <div>
-                                <p>{upcoming.description}</p>
-                            </div>
-                            <span>
-                                {upcoming.launchDate}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
+                Em breve
+            </h1>
+            <ul>
+                {upcomings.map((upcoming) => (
+                    <li key={upcoming.title}>
+                        <div>
+                            <h3>{upcoming.title}</h3>
+                        </div>
+                            <img src={upcoming.cover} alt={upcoming.title} />
+                        <div>
+                            <p>{upcoming.description}</p>
+                        </div>
+                        <span>
+                            {upcoming.launchDate}
+                        </span>
+                    </li>
+                ))}
+            </ul>
         </nav>
     )
 }
