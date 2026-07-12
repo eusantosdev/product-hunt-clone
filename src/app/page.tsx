@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <TrandingTopics/>
         <div className="max-w-screen-xl mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="w-full md:w-2/3">
               <ProductsList />
             </div>
