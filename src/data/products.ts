@@ -3,6 +3,7 @@ export type Product = {
     title: string,
     description: string,
     cover: string,
+    category: string[],
     votes: string
 };
 
@@ -12,6 +13,7 @@ export const products: Product[] = [
     title: "ChatPDF",
     description: "Converse com qualquer PDF usando Inteligência Artificial.",
     cover: "https://placehold.co/48x48/F4320B/white?text=CP",
+    category: ["IA", "Produtividade"],
     votes: "342",
   },
   {
@@ -19,6 +21,7 @@ export const products: Product[] = [
     title: "Notion AI",
     description: "Escreva, resuma e organize suas notas com IA integrada.",
     cover: "https://placehold.co/48x48/000000/white?text=N",
+    category: ["IA"],
     votes: "289",
   },
   {
@@ -26,6 +29,7 @@ export const products: Product[] = [
     title: "Gamma",
     description: "Crie apresentações incríveis com IA em segundos.",
     cover: "https://placehold.co/48x48/6C3CE1/white?text=G",
+    category: ["IA", "Estudos"],
     votes: "217",
   },
   {
@@ -33,6 +37,7 @@ export const products: Product[] = [
     title: "Synthesia",
     description: "Gere vídeos profissionais com avatares de IA sem câmera.",
     cover: "https://placehold.co/48x48/FF6B6B/white?text=S",
+    category: ["IA", "Entretenimento"],
     votes: "198",
   },
   {
@@ -40,6 +45,7 @@ export const products: Product[] = [
     title: "Framer AI",
     description: "Crie sites completos apenas descrevendo o que você quer.",
     cover: "https://placehold.co/48x48/0099FF/white?text=F",
+    category: ["IA", "Programação"],
     votes: "175",
   },
   {
@@ -47,6 +53,7 @@ export const products: Product[] = [
     title: "Otter.ai",
     description: "Transcreva reuniões e gere resumos automáticos com IA.",
     cover: "https://placehold.co/48x48/00C2A8/white?text=O",
+    category: ["IA", "Produtividade"],
     votes: "163",
   },
   {
@@ -54,6 +61,7 @@ export const products: Product[] = [
     title: "Perplexity",
     description: "Motor de busca com IA que cita as fontes das respostas.",
     cover: "https://placehold.co/48x48/20B2AA/white?text=P",
+    category: ["IA", "Produtividade"],
     votes: "154",
   },
   {
@@ -61,6 +69,7 @@ export const products: Product[] = [
     title: "Runway",
     description: "Edite e gere vídeos criativos com Inteligência Artificial.",
     cover: "https://placehold.co/48x48/1A1A2E/white?text=R",
+    category: ["IA", "Edição de vídeos"],
     votes: "142",
   },
 ];
