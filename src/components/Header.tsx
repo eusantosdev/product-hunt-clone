@@ -2,7 +2,14 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+
 import { useState } from "react";
+
+const links = [
+  { label: "Produtos", href: "#"},
+  { label: "Categorias", href: "#"},
+  { label: "Sobre", href: "#"},
+];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,22 +45,14 @@ export default function Header() {
         </div>
 
         <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isOpen ? "block" : "hidden"}`}>
-          <ul className="flex flex-col md:p-0 mt-4 font-medium rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
-            <li>
-              <a href="#" className="block py-2 px-3 text-heading rounded hover:text-[#F4320B] hover:underline">
-                Produtos
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-heading rounded hover:text-[#F4320B] hover:underline">
-                Categorias
-              </a>
-            </li>
-            <li>
-              <a href="#" className="block py-2 px-3 text-heading rounded hover:text-[#F4320B] hover:underline">
-                Sobre
-              </a>
-            </li>
+          <ul className="flex flex-col font-medium rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+            {links.map((link) => (
+              <li>
+                <a key={link.label} href={link.href} className="block py-2 px-3 text-heading rounded hover:text-[#F4320B] hover:underline">
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>  
 
