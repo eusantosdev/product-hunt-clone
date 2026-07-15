@@ -1,9 +1,4 @@
-export type Reviewed = {
-    title: string,
-    description: string,
-    cover: string,
-    rating: number;
-};
+import { Reviewed } from "@/types";
 
 export const revieweds: Reviewed[] = [
     {
