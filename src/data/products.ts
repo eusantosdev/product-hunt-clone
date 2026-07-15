@@ -1,11 +1,4 @@
-export type Product = {
-    rank: number,
-    title: string,
-    description: string,
-    cover: string,
-    category: string[],
-    votes: string
-};
+import { Product } from "@/types";
 
 export const products: Product[] = [
   {
