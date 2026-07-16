@@ -1,4 +1,5 @@
-import { products, type Product } from "@/data/products";
+import { products } from "@/data/products";
+import VoteButton from "./VoteButton";
 
 export default function ProductCard() {
     return(
@@ -18,11 +19,9 @@ export default function ProductCard() {
                             ))}
                         </div>
                     </div>
-
-                    <button className="flex flex-col items-center px-3 py-1.5 border-2 border-[#cfd8dc] rounded-md hover:border-[#F4320B] hover:transition-colors duration-200 hover:text-[#F4320B]">
-                        <span className="text-xs">▲</span>
-                        <span className="text-sm font-semibold text-foreground">{product.votes}</span>
-                    </button>
+                    <VoteButton 
+                        votes={product.votes} 
+                    />
                 </li>
             ))}
         </ul>

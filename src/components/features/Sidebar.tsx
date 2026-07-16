@@ -1,5 +1,5 @@
 import { revieweds, Reviewed } from "@/data/revieweds";
-import { upcomings, Upcoming } from "@/data/upcoming";
+import { upcomings, Upcoming } from "@/data/upcomings";
 
 export default function Sidebar() {
     return(
