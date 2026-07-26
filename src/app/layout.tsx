@@ -1,12 +1,13 @@
-import Header from "@/components/layout/Header";
-
 import type { Metadata } from "next";
+import { ClerkProvider, Show, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
+
+import Header from "@/components/layout/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,10 +36,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       >
         <body className="min-h-full flex flex-col">
-          <Header/>
-          <main className="pt-16">
-            {children}
-          </main>
+          <ClerkProvider>
+            <Header/>
+            <main className="pt-16">
+              {children}
+            </main>
+          </ClerkProvider>
         </body>
       </html>
     </>
