@@ -3,7 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
-import { useState } from "react";
+import React, { ReactNode, useState } from "react";
 
 const links = [
   { label: "Produtos", href: "#"},
@@ -11,7 +11,11 @@ const links = [
   { label: "Sobre", href: "#"},
 ];
 
-export default function Header() {
+interface HeaderProps {
+  children: ReactNode
+}
+
+export default function Header({ children } : HeaderProps ) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,12 +29,7 @@ export default function Header() {
         </a>
 
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-4">
-          <button type="button" className="text-white bg-[#F4320B] hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none">
-            Sign In
-          </button>
-          <button type="button" className="text-white bg-[#F4320B] hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none">
-            Sign Up
-          </button>
+          {children}
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
