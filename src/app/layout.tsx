@@ -37,7 +37,23 @@ export default function RootLayout({
       >
         <body className="min-h-full flex flex-col">
           <ClerkProvider>
-            <Header/>
+            <Header>
+              <Show when="signed-out">
+                <SignInButton>
+                  <button className="rounded-full border-2 border-gray-200 hover:border-gray-400 hover:transition-colors duration-200 font-medium text-sm px-4 py-2 cursor-pointer">
+                    Sign In
+                  </button>
+                </SignInButton>
+                <SignUpButton>
+                  <button className="rounded-full bg-[#F4320B] text-white font-medium text-sm px-4 py-2 cursor-pointer">
+                    Sign Up
+                  </button>
+                </SignUpButton>
+              </Show>
+              <Show when="signed-in">
+                <UserButton />
+              </Show>
+            </Header>
             <main className="pt-16">
               {children}
             </main>
