@@ -9,17 +9,16 @@ export async function POST(req: NextRequest) {
 
     if(eventType === 'user.created') {
       const { id, created_at, updated_at } = evt.data;
-      const newUser = await prisma.user.create({
+      await prisma.user.create({
             data: {
               externalId: id,
               createdAt: new Date(created_at),
               updatedAt: new Date(updated_at),
             }
         });
-        console.log(`User ${newUser.id} created!`)
     } else if(eventType === 'user.updated') {
       const { id, updated_at } = evt.data;
-      const updateUser = await prisma.user.update({
+      await prisma.user.update({
         where: { 
           externalId: id 
         },
@@ -27,15 +26,13 @@ export async function POST(req: NextRequest) {
           updatedAt: new Date(updated_at)
         }
       });
-      console.log(`User ${updateUser.id} updated!`);
     } else if (eventType === 'user.deleted') {
       const { id } = evt.data;
-      const userDeleted = await prisma.user.delete({
+      await prisma.user.delete({
         where: {
           externalId: id
         }
       });
-      console.log(`User ${userDeleted.id} deleted!`)
     }
     return new Response('Webhook received', { status: 200 })
   } catch (err) {
