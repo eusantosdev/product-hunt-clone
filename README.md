@@ -64,7 +64,7 @@ O **Product Hunt Clone** é uma réplica do famoso Product Hunt, plataforma onde
 ```
  
 7. Acesse [http://localhost:3000](http://localhost:3000) no navegador.
-## 4. Screenshots ou GIFs do projeto funcionando
+## Screenshots ou GIFs do projeto funcionando
  
 > _Adicione aqui capturas de tela ou GIFs mostrando as principais telas do projeto (listagem de produtos, tela de votação, login, etc.)._
  
@@ -73,7 +73,7 @@ O **Product Hunt Clone** é uma réplica do famoso Product Hunt, plataforma onde
 ![Sistema de votação](./docs/screenshots/voting.gif)
 ```
  
-## 5. Link para o deploy
+## Link para o deploy
  
 > 🔗 _Adicione aqui o link do projeto publicado no Railway assim que o deploy estiver disponível._
  
@@ -82,3 +82,5 @@ Exemplo:
 ```
 https://product-hunt-clone.up.railway.app
 ```
+
+## Desafios enfrentados e como foram resolvidos
