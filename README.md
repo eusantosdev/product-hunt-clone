@@ -64,7 +64,7 @@ O **Product Hunt Clone** é uma réplica do famoso Product Hunt, plataforma onde
 ```
  
 7. Acesse [http://localhost:3000](http://localhost:3000) no navegador.
-## Screenshots ou GIFs do projeto funcionando
+## Screenshots do projeto
  
 > _Adicione aqui capturas de tela ou GIFs mostrando as principais telas do projeto (listagem de produtos, tela de votação, login, etc.)._
  
