@@ -10,7 +10,7 @@ export default function TrandingTopics() {
 
                 <div className="flex gap-2 overflow-x-auto scrollbar-none">
                     {categories.map((category) => (
-                        <button key={category} className="text-white text-sm font-medium p-2 rounded-md bg-[#F87C63] hover:bg-[#F4320B] transition-colors duration-200">
+                        <button key={category} className="text-black text-sm font-medium py-1 px-4 rounded-full border border-[#cfd8dc] hover:bg-[#F4320B] transition-colors duration-200">
                             {category}
                         </button>
                     ))}
