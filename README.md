@@ -1,6 +1,6 @@
 ## Product Hunt Clone
 
-O **Product Hunt Clone** é uma réplica do famoso Product Hunt, plataforma onde startups e criadores divulgam seus projetos e a comunidade pode votar nos que mais gosta. O sistema conta com autenticação de usuários e um sistema de **upvote**, permitindo que cada usuário vote apenas uma vez em cada produto.
+The **Product Hunt Clone** is a clone of the famous Product Hunt platform, where startups and creators publicize their projects and a community can vote on their favorites. The system features user authentication and an **upvote** system, allowing each user to vote only once on each product.
 
 ## Tecnologias utilizadas
  
