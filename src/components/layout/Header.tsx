@@ -20,7 +20,7 @@ export default function Header() {
 
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-xl text-heading font-semibold whitespace-nowrap">
-            Product Hunt
+            Product Hunt Clone
           </span>
         </a>
 
