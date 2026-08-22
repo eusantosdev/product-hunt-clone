@@ -28,10 +28,10 @@ export default function Header() {
         </a>
 
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-4">
-          <button type="button" className="text-black border border-[#cfd8dc] focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-6 py-2 focus:outline-none">
+          <button type="button" className="text-black border border-[#cfd8dc] focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-6 py-2 hover:cursor-pointer">
             Sign In
           </button>
-          <button type="button" className="text-white bg-[#F4320B] border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-6 py-2 focus:outline-none">
+          <button type="button" className="text-white bg-[#F4320B] border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-6 py-2 hover:cursor-pointer">
             Sign Up
           </button>
           <button
