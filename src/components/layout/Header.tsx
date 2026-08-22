@@ -2,6 +2,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import logo from '../../public/logo.svg'
 
 import { useState } from "react";
 
