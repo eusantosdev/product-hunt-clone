@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import logo from '../../public/logo.svg'
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 const links = [
-  { label: "Produtos", href: "#"},
-  { label: "Categorias", href: "#"},
-  { label: "Sobre", href: "#"},
+  { label: "Produtos", href: "/products"},
+  { label: "Categorias", href: "/categories"},
+  { label: "Sobre", href: "/about"},
 ];
 
 export default function Header() {
@@ -49,9 +51,9 @@ export default function Header() {
           <ul className="flex flex-col font-medium rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
             {links.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="block py-2 px-3 text-heading rounded hover:text-[#F4320B]">
+                <Link href={link.href} className="block py-2 px-3 text-heading rounded hover:text-[#F4320B]">
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
